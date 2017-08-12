@@ -40,7 +40,7 @@ int main()
 		//Print to terminal and to file
 		ofstream output;
 		output.open ("FileOne.txt");
-		for(int i = 0; i< 4; i ++)
+		for(int i = 0; i< 3; i ++)
 		{
 			int num1 = rand() % SIZE;
 
