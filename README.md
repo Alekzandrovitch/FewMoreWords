@@ -1,6 +1,6 @@
 # Random-Quatrains-Sonnet-Generator
 
->>It would be nice to analyse the words and come up with a sutible couplet for the end.
+It would be nice to analyse the words and come up with a sutible couplet for the end.
 
 Input
 Takes 3 or more to just display in different order, the more you have the more it will mix them up as it has a larger amount of data to work with. 
