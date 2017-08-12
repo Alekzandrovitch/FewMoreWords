@@ -4,7 +4,7 @@
 #include <fstream>
 #include <time.h>
 #define SIZE 53 //Length of the lines divided by four(number of line in section)
-using namespace sdl;
+using namespace std;
 class Queplet
 {
 public:
