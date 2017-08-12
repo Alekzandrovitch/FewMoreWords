@@ -9,20 +9,20 @@ Input file is called data.txt
 
 Example Output 
 
-In life there is a truth and a fiction\
-Will it be a waste of money, perhaps.\
-Truth can cause aggression with conviction\
-Given the chance, i will likely collapse\
+In life there is a truth and a fiction
+Will it be a waste of money, perhaps.
+Truth can cause aggression with conviction
+Given the chance, i will likely collapse
 
 How can I be so unempathetic 
-I have a birds eye sight on my own view\
+I have a birds eye sight on my own view
 My compassion to me is pathetic 
-Perhaps i just don't care why, thank you!\
+Perhaps i just don't care why, thank you!
 
 Compassion is a misery itself
-Knowledge of all things, is out of my reach\
+Knowledge of all things, is out of my reach
 Tring to be empathic, myself
-Wandering, alone, this i cannot teach\
+Wandering, alone, this i cannot teach
 
 Perhaps a basis for machine learning.
 My program will have a passion burning
