@@ -1,10 +1,32 @@
 from tkinter import *
 from RhymeZone import *
 #
-#get highlighted text, create timer for app.py to be called
 
 #main
+def DisplayWords(word, rhymes):
+	
+    doct_words[word] = rhymes
+    searched_x_coord = 100
+    searched_y_coord = 100
+    diamter = len(doct_words[word]) *2
+    print(diamter)
+    radius = diamter / 2
+    
+    x0 = game_canvas.canvasx(searched_x_coord)
+    y0 = game_canvas.canvasy(searched_y_coord)
+    searched_circle = game_canvas.create_oval(x0,y0,x0+diamter,y0+diamter,fill="blue",outline="#DDD", width=5)
+    searched_text = game_canvas.create_text(x0+radius,y0+radius,tag="seached_output",text=word)
+    angle = 0
+    inc = 0
+    for each in doct_words[word]:
+        #print(each)
 
+        display_x_coord = searched_x_coord + (radius+30)  * math.cos(angle)
+        display_y_coord = searched_y_coord +(radius+30) * math.sin(angle)
+        if angle <= 20:
+            display_noun = game_canvas.create_text(display_x_coord+radius,display_y_coord+radius+inc,tag="rhyme_output",text=each["word"])
+        
+        angle +=1
 
 def rhyme_callback():
     s = content.get()
@@ -42,9 +64,7 @@ def noun_callback():
     game_canvas.delete("noun_output")
     for item in a:
         output_noun = game_canvas.create_text(350,50+(intr*13),tag="noun_output",text=item['word'])
-        intr+=1
-#When dropdown is selected setup is called and displays the different textfield options and 
-#button to access RhymeZone.pyaef Con
+        intr+=
 
 
 
@@ -82,12 +102,9 @@ noun_button.grid(row=3,column=0)
 game_canvas.grid(row=4,column=0,columnspan=4)
 
 flag_rhyme_out = "Off";
-#w.pack()
-#w.create_line(0, 0, 200, 100)
-#w.create_line(0, 100, 200, 0, fill="red", dash=(4, 4))
+
 display_var = StringVar()
 
-#display_entry.insert(0,)
 
 
 root.geometry('1400x900')
