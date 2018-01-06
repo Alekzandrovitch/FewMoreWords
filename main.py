@@ -1,7 +1,6 @@
 from tkinter import *
 from RhymeZone import *
 import math
-import pymunk
 #
 #get highlighted text, create timer for app.py to be called
 
