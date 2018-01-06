@@ -53,6 +53,21 @@ def Spelled(word):
     return a
 #
 # words that rhyme with forgetful	/words?rel_rhy=forgetful
+def StartWithAndRelated(word):
+    words = word.split()
+    searchLink = 'http://api.datamuse.com/words?ml='+words[1]+'&sp='+words[0]+'*'
+    a  = search(searchLink)
+    return a
+def EndWithAndRelated(word):
+    words = word.split()
+    searchLink = 'http://api.datamuse.com/words?ml='+words[1]+'&sp=*'+words[0]
+    a  = search(searchLink)
+    return a
+def RhymeAndRelated(word):
+    words = word.split()
+    searchLink = 'http://api.datamuse.com/words?ml='+words[0]+'&rel_rhy='+words[1]
+    a  = search(searchLink)
+    return a
 def Rhyme(word):
     searchLink = 'http://api.datamuse.com/words?rel_rhy='+word
     a  = search(searchLink)
@@ -68,5 +83,5 @@ def Adjective(word):
 def search(url):
     r = requests.get(url)
     parsed = r.json()
-    print(parsed)
+    #print(parsed)
     return parsed
